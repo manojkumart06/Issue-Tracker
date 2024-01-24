@@ -1,0 +1,19 @@
+{
+  "name": "issue-tracker",
+  "version": "1.0.0",
+  "description": "Creating a nodejs + ejs  application to track issues/bugs for a project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manojkumart06/Issue-Tracker.git"
+  },
+  "author": "Manoj Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/manojkumart06/Issue-Tracker/issues"
+  },
+  "homepage": "https://github.com/manojkumart06/Issue-Tracker#readme"
+}
