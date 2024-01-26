@@ -1,17 +1,42 @@
-
-
-  <h1>Project List</h1>
-
-  <!-- Display the list of projects -->
-  <ul>
-
-  </ul>
-
-  <!-- Form to create a new project -->
-  <form action="/create-project" method="POST">
-    <label for="projectName">New Project Name:</label>
-    <input type="text" id="projectName" name="projectName" required>
-    <button type="submit">Create Project</button>
-  </form>
-
-
+<!-- Home Page Container -->
+<div class="container">
+    <div class="mainHeading">
+      <p class="heading">Projects</p>
+      <a class="addProject" href="create_project"
+        ><i class="fa-solid fa-plus fa-beat"></i>
+      </a>
+      <div class="tooltip addProjectTooltip"><p>Create Project</p></div>
+    </div>
+    <div class="projectContainer">
+      <!-- Rendering all the projects using forEach loop -->
+      <% allProjects.forEach((project)=>{ %>
+  
+        <div class="box">
+          <p class="projectName"><%- project.projectName %></p>
+          <p class="projectDesc">
+            <%- project.description %>
+          </p>
+          <div class="boxFooter">
+            <p class="projectAuthor">Author : <span class="name"> <%- project.authorName %></span></p>
+            <div class="detailIssueLinks">
+              <p class="issueCount"> Bug traced : <span class="count"><%- project.issues.length %></span></p>
+  
+              <!-- Tooltips when user hover over the icon present in links -->
+              <a class="projectDetails" style="margin-right: 2rem" href="project_details/<%- project.id %>"
+                ><i class="fa-solid fa-circle-info  boxLink"></i
+              ></a>
+              <div class="tooltip tooltipProjectDetails">
+                <p>Project Details</p>
+              </div>
+              <a class="createIssue" style="margin-right: 2rem" href="create_issue/<%- project.id %>"
+                ><i class="fa-solid fa-circle-plus boxLink"></i
+              ></a>
+              <div class="tooltip tooltipCreateIssue"><p>Create Issue</p></div>
+            </div>
+          </div>
+        </div>
+      <% }) %> 
+      
+    </div>
+  </div>
+  

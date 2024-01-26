@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navigationBar {
+    height: 10vh;
+    background-color: #2c3e50;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.leftNav{
+    margin-left:2rem;
+}
+.leftNav .logo{
+    color: #fe2bb4;
+}
+
+.rightNav {
+    margin-right: 2rem;
+}
+
+.rightNav a {
+    color: #ecf0f1;
+    background-color: #e74c3c; /* Background color for links */
+    font-size: 1.5rem;
+    padding: 0.4rem 1rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.rightNav a:hover {
+    background-color: #c0392b; /* Hover background color for links */
+    color: #ffffff; /* Hover text color for links */
+    border-radius: 1.5rem;
+}
