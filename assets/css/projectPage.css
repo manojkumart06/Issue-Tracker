@@ -112,7 +112,7 @@ input[type="checkbox"] {
     padding:.4rem 1rem;
     font-size:1.3rem;
     margin-left:1rem;
-    background-color: #39ff14;
+    background-color: #f70fc0;
     cursor: pointer;
     transition: all .2s ease-in-out;
 }
@@ -135,7 +135,7 @@ input[type="checkbox"]::before {
     transform: scale(0);
     transition: 120ms transform ease-in-out;
     border-radius:3px;
-    box-shadow: inset 1em 1em #39ff14;
+    box-shadow: inset 1em 1em #14b1ff;
 }
 
 input[type="checkbox"]:checked::before {
@@ -151,17 +151,17 @@ input[type="checkbox"]:checked::before {
     width:10px;
 }
 .bugSection::-webkit-scrollbar-thumb{
-    background-color: #39ff14;
+    background-color: #14fff3;
 }
 .bug{
-    border:2px solid black;
+    border:2px dotted black;
     padding:.5rem;
     margin:.5rem 0;
 }
 .bugSection .title{
     font-size:1.2rem;
     font-weight:bold;
-    color:blueviolet;
+    color:rgb(226, 43, 43);
 }
 .bugSection .title .name{
     font-size:1.4rem;
