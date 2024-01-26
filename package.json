@@ -4,9 +4,15 @@
   "description": "Creating a nodejs + ejs  application to track issues/bugs for a project",
   "main": "index.js",
   "scripts": {
+<<<<<<< HEAD
     "start": "nodemon index.js",
     "test": "npx nodemon ./index.js",
     "dev": "mongodb+srv://Manoj:<password>@cluster0.lz9pnlh.mongodb.net/?retryWrites=true&w=majority nodemon index.js"
+=======
+    "start": "node index.js",
+    "dev" : "nodemon inde.js",
+    "test": "npx nodemon ./index.js"
+>>>>>>> 0fc995a1f54822d2b256651e0cfb15a5a79424d5
   },
   "repository": {
     "type": "git",
